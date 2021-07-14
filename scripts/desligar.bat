@@ -1,0 +1,1 @@
+shutdown -t 60 -s -f -c "O COMPUTADOR DESLIGARA DAQUI 60 MINUTOS, -JAY"
