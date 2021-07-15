@@ -12,6 +12,12 @@ class Jay:
     def DesligarComputador(self):
         os.system(self.base_url + 'desligar.bat')
 
+    def EscreverUmTxt(self, Escrita):
+        with open('Teste.txt', 'w') as arquivo:
+            arquivo.write(Escrita)
+            print("Foi escrito: " + Escrita)
+
+
     def Ouvir(self):
         mic = sr.Recognizer()
         with sr.Microphone() as source:

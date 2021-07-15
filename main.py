@@ -18,6 +18,11 @@ try:
             Assistente.AbrirEdge()
         elif resposta == "desligar" or resposta == "desligar computador":
             Assistente.DesligarComputador()
+        elif resposta == "escrever um texto":
+            print("Fale o texto a ser escrito")
+            frase = Assistente.Ouvir()
+            texto = mic.recognize_google(frase, language="pt-BR")
+            Assistente.EscreverUmTxt(texto)
 
         print("precisa de mais alguma coisa?")
         final = Assistente.Ouvir()
